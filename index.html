@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giphy Party!</title>
+    <link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #2b2b2b;
+            color: #f8f9fa;
+        }
+        .container {
+            margin-top: 20px;
+        }
+        .gif-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .gif-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center mt-4 mb-4">GIPHY PARTY</h1>
+        <form class="form-inline d-flex justify-content-center mb-4">
+            <input type="text" id="search" name="search" placeholder="Enter a search term" class="form-search mr-2" />
+            <input type="submit" class="btn btn-primary" value="Search Giphy!" />
+            <button id="remove" class="btn btn-danger ml-2">Remove Images</button>
+        </form>
+        <div id="search-res" class="search-container">
+            <!-- GIFs will be appended here -->
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
